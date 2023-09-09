@@ -8,7 +8,7 @@ function gmailAutoArchiver() {
   maxDate.setDate(maxDate.getDate()-delayDays); // what was the date at that time?
 
   // Get the specified number of threads in the Inbox
-  var threads = GmailApp.getInboxThreads(0,50)
+  var threads = GmailApp.getInboxThreads(0,500)
   
   // we archive all the threads if they're read AND older than the limit we set in delayDays 
   // AND if the thread does not contain any starred messages
