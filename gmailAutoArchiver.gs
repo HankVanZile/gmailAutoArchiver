@@ -13,7 +13,7 @@ function gmailAutoArchiver() {
   // we archive all the threads if they're read AND older than the limit we set in delayDays 
   // AND if the thread does not contain any starred messages
   for (var i = 0; i < threads.length; i++) {
-    if ((threads[i].getLastMessageDate()<maxDate) && !threads[i].isUnread() && !thread[i].hasStarredMessages())
+    if ((threads[i].getLastMessageDate()<maxDate) && !threads[i].isUnread() && !threads[i].hasStarredMessages())
     {
       threads[i].moveToArchive();
     }
